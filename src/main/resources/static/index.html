@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>Jogo da Forca</h1>
+
+<!-- Menu Principal -->
+<div id="menu">
+    <button onclick="showPlay()">Jogar</button>
+    <button onclick="showRules()">Regras</button>
+    <button onclick="restartGame()">Reiniciar jogo</button>
+    <button onclick="exitGame()">Sair</button>
+</div>
+
+<!-- Regras -->
+<div id="rules" style="display:none;">
+    <h2>Regras do Jogo</h2>
+    <p>- Tente adivinhar a palavra letra por letra.</p>
+    <p>- Você tem um número limitado de tentativas (6 erros).</p>
+    <p>- Se errar muitas vezes, perde o jogo.</p>
+    <p>- Boa sorte!</p>
+    <button onclick="backToMenu()">Voltar ao menu</button>
+</div>
+
+<!-- Área do jogo -->
+<div id="play" style="display:none;">
+    <label for="categorySelect">Escolha uma categoria:</label>
+    <select id="categorySelect"></select>
+    <button id="startBtn">Iniciar jogo</button>
+
+    <div id="gameArea" style="display:none;">
+        <p id="hint"></p>
+        <p id="wordDisplay"></p>
+        <input id="letterInput" maxlength="1" placeholder="Digite uma letra" />
+        <button id="guessBtn">Tentar letra</button>
+        <p id="gameMessage"></p>
+        <img id="hangmanImage" src="images/hangman0.png" alt="Imagem da Forca" />
+
+
+    </div>
+
+
+    <button onclick="backToMenu()">Voltar ao menu</button>
+</div>
+
+<script src="hangman.js"></script>
+
+</body>
+</html>

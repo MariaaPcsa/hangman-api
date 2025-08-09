@@ -1,0 +1,145 @@
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #d0e8ff, #a0c8ff);
+  color: #0b3d91;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #08306b;
+  text-shadow: 1px 1px 3px rgba(0, 0, 50, 0.2);
+}
+
+#gameArea {
+  margin-top: 20px;
+  background-color: #e6f0ffcc;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(10, 40, 90, 0.15);
+}
+
+#wordDisplay {
+  font-size: 2.5rem;
+  letter-spacing: 0.4em;
+  margin: 1rem 0;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  color: #185abc;
+  text-shadow: 1px 1px 1px #cfe2ff;
+}
+
+#hangmanImage {
+  max-width: 200px;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(24, 90, 188, 0.3);
+}
+
+button {
+  margin: 0.3rem;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  background-color: #1e66d0;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(30, 102, 208, 0.6);
+}
+
+button:hover:not(:disabled) {
+  background-color: #3b82f6;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(59, 130, 246, 0.7);
+}
+
+button:disabled {
+  background-color: #a3bffa;
+  cursor: not-allowed;
+  box-shadow: none;
+  color: #cbd5e1;
+}
+
+input[type="text"] {
+  font-size: 1.3rem;
+  width: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.3rem 0.4rem;
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  margin-right: 0.7rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 5px #93c5fd44;
+}
+
+input[type="text"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px #2563ebaa;
+}
+
+select {
+  font-size: 1rem;
+  padding: 0.4rem 0.7rem;
+  margin: 0.5rem;
+  border-radius: 12px;
+  border: 2px solid #2563eb;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 5px #60a5faaa;
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-weight: 600;
+}
+
+select:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 8px #1d4ed8cc;
+  background-color: #eff6ff;
+}
+
+#hint {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #1e40af;
+  margin-bottom: 0.8rem;
+  text-shadow: 1px 1px 2px #93c5fdaa;
+}
+
+#gameMessage {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  text-shadow: 1px 1px 3px #3b82f699;
+}
+
+@media (max-width: 480px) {
+  #wordDisplay {
+    font-size: 2rem;
+    letter-spacing: 0.3em;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.1rem;
+  }
+
+  input[type="text"] {
+    width: 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  select {
+    font-size: 0.9rem;
+  }
+}
