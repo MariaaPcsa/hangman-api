@@ -5,6 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/MariaaPcsa/hangman-api?style=social)](https://github.com/MariaaPcsa/hangman-api/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MariaaPcsa/hangman-api/blob/main/LICENSE)
 
+
 🧠 Hangman API
 Uma API RESTful para o jogo da forca, desenvolvida em Java com Spring Boot. Permite jogar via endpoints HTTP, ideal para integração com frontends ou como base para projetos educacionais.
 
